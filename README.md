@@ -37,15 +37,22 @@ Edit this document to include your answers after each question. Make sure to lea
 
 2. Explain the difference between a callback and a higher order function.
 
- A higher order function is a function that accepts and runs another function within it. A callback function is a function that is passed into another function, either anonymously or as an argument.
+- A higher order function is a function that accepts and runs another function within it. A callback function is a function that is passed into another function, either anonymously or as an argument.
 
 3. Explain what a closure is.
 
- 
+ - A closure is created when a function is created which combines variables and an inner function. The closure allows the inner function to always have access to the local variables yet keeps those variables private (inaccessible by anything outside of the outer function containing them).
 
 4. Describe the four principles of the 'this' keyword.
 
+ - Global: When the `this` keyword is not bound to anything (not given any context), javascript automatically returns the entire Window whenver the `this` keyword is used.
+ - Implicit: When the `this` keyword is used within a method (that is function in an object), whenever the method is called with an `obj.method()`, whatever is directly to the left of the dot is what the `this` in the method refers to.
+ - New: When a constructor function is used to build a new object, the `this` in the constructor function refers to the new object being created by it.
+ - Explict: When the .call or .apply methods are used, `this` is explicitely defined by whatever is input as the argument of those methods.
+
 5. Why do we need super() in an extended class?
+
+ - The use of super() grabs all of the keys of the parent class(the class which the new class has been extended from), so that the new child object can input its attributes as values for each of the parent's keys, in addition to any key:value pairs that are unique to the child class.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
