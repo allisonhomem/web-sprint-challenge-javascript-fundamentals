@@ -17,7 +17,11 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+//The variable 'internal', since assigned inside of the funtion 'myFunction', has function scope and not global scope. 
+//So that means that 'internal' cannot be universally accessed, and it local to 'myFunction'. However, since 
+//'nestedFunction' is also declared inside of 'myFunction', 'nestedFunction' has access to all global variables, and 
+//all variables local to its parent functions. Thus 'nestedFunction' can access 'internal', since it is a variable 
+//local to a parent function 'myFunction' in which 'nestedFunction' is contained.
 
 
 
