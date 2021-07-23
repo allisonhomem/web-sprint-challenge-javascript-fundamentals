@@ -37,7 +37,11 @@ Edit this document to include your answers after each question. Make sure to lea
 
 2. Explain the difference between a callback and a higher order function.
 
+ A higher order function is a function that accepts and runs another function within it. A callback function is a function that is passed into another function, either anonymously or as an argument.
+
 3. Explain what a closure is.
+
+ 
 
 4. Describe the four principles of the 'this' keyword.
 
