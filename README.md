@@ -26,6 +26,15 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+ - `.map` is used to take an existing array of objects, and from that create a new array containing the desired key:value pairs from every object in the array.
+    --> use: Suppose you have an array `books` where each object has information about a certain book, like title, author, number of pages and summary. If you wanted to create a new array with only book titles, you could use .map() to do so.
+
+ - `.filter` is used to take an existing array of objects, and from that create a new array containing only the objects whose key:value pairs meet whatever conditions desired.
+    --> use: Suppose you have an array `books` where each object has information about a certain book, like title, author, number of pages and summary. If you wanted to create a new array with only all the books written by a particular author, you could use .filter() to do so.
+
+ - `.reduce` is used to take an existing arrary of objects, and from that take a specific key:value pair in each object and reduce it down to a single value by way of sum or product. This method accepts an accumulator(like sum or product), a current value(to specify the key:value pair desired) and optionally indices in the array and an initial value.
+    --> use: Suppose you have an array `books` where each object has information about a certain book, like title, author, number of pages and summary. Suppose you read every book in your array, and wanted to know the total number of pages you had read, you could use .reduce() with sum to do so.
+
 2. Explain the difference between a callback and a higher order function.
 
 3. Explain what a closure is.
